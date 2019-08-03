@@ -1,0 +1,252 @@
+.articleColumns {
+	margin: 0px 5% 0px 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.articleColumns > section {
+	margin: auto 0px auto 0px;
+}
+
+.articleColumns a, #edit-draft{
+	color: #83A8F0;
+	text-decoration: none;
+}
+
+#edit-draft {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+}
+
+#edit-draft:focus {
+    outline: none;
+}
+
+.articleColumns > #articleColumn {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 20px;
+	margin-top: 0px;
+}
+
+.articleColumns > #articleAdColumn {
+	min-width: 25%;
+	display: none; /*Change to flex once finished*/
+	flex-direction: column;
+}
+
+.articleColumns > .threeColumnSection {
+	flex-grow: 1;
+	max-width: 33%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.articleBody {
+	color: #414141;
+	width: 80%;
+	word-wrap: break-word;
+}
+
+.threeColumnSection > article {
+	padding: 5px 0px;
+}
+
+.threeColumnSection .articleBody {
+	padding-left: 10px;
+}
+
+.threeColumnSection .articleBody h1 > a {
+    font-size: 30px;
+    color: #414141;
+    font-weight: normal;
+    margin: 0px auto;
+}
+
+.threeColumnSection .articleBody > p {
+    color: #414141;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-top: 5px;
+}
+
+.threeColumnSection.center {
+	border-right: 1px solid #3d9be9;
+	border-left: 1px solid #3d9be9;
+}
+
+.ad {
+	border: 2px solid lightgrey;
+	margin: 5px auto 5px auto;
+	min-height: 200px;
+	min-width: 250px;
+}
+
+.ad > p {
+	margin: 45% auto 45%;
+	font-family: sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+#further-reading, #commentSection {
+	margin: 0px 5% 0px 5%;
+}
+
+#further-reading > h1, #commentSection > h1 {
+	margin: 10px auto 0px auto;
+    font-size: 30px;
+    color: #414141;
+}
+
+#commentSection > #commentsMessage {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+	color: grey;
+}
+
+#commentSection > .comment {
+	display: flex;
+	flex-direction: row;
+	margin: 10px auto 10px 5px;
+	padding-left: 3px;
+	border-left: 1px solid grey;
+}
+
+#commentSection > .comment > .commentText {
+	order: 2;
+}
+
+.comment > img {
+	order: 1;
+	margin: 5px;
+	padding-right: 5px;
+	display: block;
+	max-height: 50px;
+	max-width: 50px;
+}
+.comment > .commentText > p {
+	margin: 3px auto 3px auto;
+}
+.comment > .commentText > .commentLinks {
+	font-size: 14px;
+	color: grey;
+}
+.commentLinks > * {
+	cursor: pointer;
+}
+.commentTitle > .commentAuthor {
+	font-weight: bold;
+}
+.commentTitle > .commentAuthor > .username {
+	font-weight: normal;
+	font-style: italic;
+}
+.commentTitle > .commentDate {
+	color: grey;
+}
+
+
+.commentEditInputs textarea {
+	min-width: 90%;
+	height: auto;
+	font-family: inherit;
+	font-size: inherit;
+}
+.commentEditInputs {
+	display: none; /* Hidden by default */
+}
+
+.replyForm {
+	margin: inherit;
+	padding-top: 15px;
+	font-family: inherit;
+	display: none;
+}
+.replyForm > textarea {
+	min-height: 55px;
+	min-width: 500px;
+	font-family: inherit;
+	resize: none;
+	display: block;
+}
+.replyForm > input {
+	margin: 5px 5px auto auto;
+}
+
+#commentForm > * {
+	margin: 5px 5px auto 0px;
+}
+#commentForm > textarea{
+	display: block;
+	font-family: inherit;
+	min-width: 35%;
+	min-height: 75px;
+}
+
+.errorMessage {
+	display: none; /* Hidden by default */
+	max-width: 50%;
+	border: 2px solid #D44F33;
+	background-color: #FF8383;
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.articleDetails > h1 {
+	margin: 10px auto 0px auto;
+    font-size: 40px;
+    font-weight: bold;
+    color: #414141;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.articleDetails > p {
+	margin: 0px 3px;
+    color: #414141;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.articleDetails > p:last-of-type {
+	margin-bottom: 15px;
+}
+
+.articleImage > img {
+	max-width: 550px;
+	max-height: 400px;
+	width: auto;
+	height: auto;
+}
+
+#infoBanner {
+	margin: 25px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: white;
+	background-color: #D44F33;
+}
+
+#pubDetails > .rightIcons {
+	float: right;
+	font-size: 20px;
+}
+#pubDetails > .rightIcons i {
+	cursor: pointer;
+}
+
+.deletedComment {
+	color: grey;
+	font-style: italic;
+}
